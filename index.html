@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naikk Aire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="cart-container">
+            <button id="view-cart"
+            class="btn-primary">Ver Carrito (<span id="cart-count">0</span>)</button>
+            <div id="cart-content" style="display: none;">
+            <h2>Tu Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: $0.000</p>
+            <button id="checkout"
+            class="btn-primary">Finalizar Compra yei</button>
+        </div>
+        </div>
+        <div class="container">
+            <h1>Naikk Aire</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido</h2>
+            <p>Naikk Aire, Originalidad y Calidad.</p>
+            <a href="#products" class="btn-primary">Ver Productos</a>
+        </div>
+    </section>
+    
+    <section id="products" class="products">
+        <div class="container">
+            <button class="collapsible-button" onclick="toggleContent('gorras')">Gorros</button>
+            <div id="gorras" class="collapsible-content">
+                <div class="product-grid">
+                    <article class="product-item">
+                        <img src="image/Nike Sportswear, Beanie Unisex.png" alt="Producto 1">
+                        <div class="product-info">
+                            <h3>Nike Sportswear</h3>
+                            <p>Beanie Unisex <br> Calidez, comodidad y estilo.</p>
+                            <p class="price">$29.990</p>
+                            <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                        </div>
+                    </article>
+                <article class="product-item">
+                    <img src="image/Jordan Essentials, Beanie Unisex (2).png" alt="Producto 2">
+                    <div class="product-info">
+                        <h3>Jordan Essentials</h3>
+                        <p>Beanie Unisex <br> El tejido Knit se siente suave y cálido.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Sport Essentials, Gorro Unisex Dri-Fit ADV.png" alt="Producto 3">
+                    <div class="product-info">
+                        <h3>Nike Sport Essentials</h3>
+                        <p>Gorro Unisex Dri-Fit ADV. <br>Tela avanzada que absorbe el sudor para ayudarte a mantener la frescura.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Dri-FIT Club, Gorro Tn Air Max desestructurado.png" alt="Producto 4">
+                    <div class="product-info">
+                        <h3>Nike Dri-FIT Club</h3>
+                        <p>Gorro Tn Air Max desestructurado.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Jordan Flight MVP Pro.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Jordan Flight MVP Pro</h3>
+                        <p>Gorra estructurada. <br> Comodidad y una visera plana para verse bien.</p>
+                        <p class="price">$29.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Jordan Rise.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Jordan Rise</h3>
+                        <p>Gorra estructurada <br>Profundidad alta para darte un ajuste espacioso y moderno.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Apex.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Apex</h3>
+                        <p>Gorro reversible <br>Te permite cambiar tu estilo en cualquier momento.</p>
+                        <p class="price">$32.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Jordan Fly.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Jordan Fly</h3>
+                        <p>Gorra estructurada.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Club Gorro Swoosh desestructurada.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Club</h3>
+                        <p>Gorro Swoosh desestructurada <br>Lleva el estilo informal a cualquier atuendo con nuestra gorra Nike Club.</p>
+                        <p class="price">$23.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Sportswear Club, Gorro Unisex Dri-Fit.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Sportswear Club</h3>
+                        <p>Gorro Unisex Dri-Fit <br>Mejora tu estilo Swoosh con este mid -Cap de club desestructurado y profundo.</p>
+                        <p class="price">$24.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Sport Essentials, Gorro Unisex Dri-Fit ADV 1.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Sport Essentials</h3>
+                        <p>Gorro Unisex Dri-Fit ADV.<br>Ponte en marcha con la gorra Nike Fly hagas lo que hagas.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Dri-FIT Rise, Gorro estructurado con cierre a presión.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Dri-FIT Rise</h3>
+                        <p>Gorro estructurado con cierre a presión. <br>Diseñada para el gimnasio, el trabajo y cualquier otro lugar.</p>
+                        <p class="price">$24.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <button class="collapsible-button" onclick="toggleContent('zapatillas')">Zapatillas</button>
+            <div id="zapatillas" class="collapsible-content">
+                <div class="product-grid">
+                    <!-- Aquí van todos los artículos de Zapatillas -->
+                    <article class="product-item">
+                        <img src="image/Air Jordan 1 High Method of Make.png" alt="Producto 1">
+                        <div class="product-info">
+                            <h3>Air Jordan 1 High Method of Make</h3>
+                            <p>Zapatillas para Mujer<br>Tu estilo es icónico y tu gusto es de primer nivel.</p>
+                            <p class="price">$156.990</p>
+                            <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                        </div>
+                    </article>
+                <article class="product-item">
+                    <img src="image/Air Jordan 1 Retro High OG.png" alt="Producto 2">
+                    <div class="product-info">
+                        <h3>Air Jordan 1 Retro High OG</h3>
+                        <p>Zapatillas para Hombre <br>Renueva el calzado clásico, y te ofrece un nuevo look con una sensación familiar.</p>
+                        <p class="price">$151.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Air Jordan 1 Mid .png" alt="Producto 3">
+                    <div class="product-info">
+                        <h3>Air Jordan 1 Mid</h3>
+                        <p>Zapatillas para Niños<br>Ofrecen un soporte máximo y celebran al calzado que lo inició todo.</p>
+                        <p class="price">$112.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Jordan Stadium 90.png" alt="Producto 4">
+                    <div class="product-info">
+                        <h3>Jordan Stadium 90</h3>
+                        <p>Zapatillas para Hombre.<br>La comodidad es lo más importante, pero eso no significa que debas sacrificar el estilo.</p>
+                        <p class="price">$146.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike City Classic Boot PRM.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike City Classic Boot PMR</h3>
+                        <p>Botas para Mujer<br>Las condiciones del tiempo ya no son una excusa: estas botas pueden hacerlo todo, igual que tú.</p>
+                        <p class="price">$156.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike AL8.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike AL8</h3>
+                        <p>Zapatillas para Mujer<br>La mezcla perfecta de nostalgia (echa un vistazo al Swoosh bordado) y la comodidad moderna que amas.</p>
+                        <p class="price">$96.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Air Max Plus Drift Tn.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Air Max Plus Drift Tn</h3>
+                        <p>Zapatillas para Mujer <br>Una experiencia Nike Air mejorada que ofrece una estabilidad premium y una amortiguación increíble.</p>
+                        <p class="price">$192.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Journey Run.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Journey Run</h3>
+                        <p>Gorra estructurada.</p>
+                        <p class="price">$96.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/W AIR MAX 90 SE.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>W AIR MAX 90 SE</h3>
+                        <p>Zapatillas para mujer. <br>No hay nada más ligero, más cómodo ni más probado.</p>
+                        <p class="price">$146.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike ReactX Pegasus Trail 5.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike ReactX Pegasus Trail 5</h3>
+                        <p>Zapatillas de Trail Running para hombre.<br>Es suave en la carretera, estable en el sendero y mejor para el medio ambiente.</p>
+                        <p class="price">$149.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Pegasus Trail 4.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Pegasus Trail 4</h3>
+                        <p>Zapatillas de trail Running para Hombre.<br>ENERGÍA DE LA CARRETERA AL SENDERO.</p>
+                        <p class="price">$149.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Infinity RN 4.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Infinity RN 4</h3>
+                        <p>Zapatillas de Running para hombre.<br>Tiene una amortiguación con soporte hecha para una carrera cómoda, te ayuda a vivir el running.</p>
+                        <p class="price">$179.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <button class="collapsible-button" onclick="toggleContent('Poleras')">Poleras</button>
+            <div id="Poleras" class="collapsible-content">
+                <div class="product-grid">
+                    <article class="product-item">
+                        <img src="image/Jordan Jumpman.png" alt="Producto 1">
+                        <div class="product-info">
+                            <h3>Jordan Jumpman</h3>
+                            <p>Beanie Unisex <br> Calidez, comodidad y estilo.</p>
+                            <p class="price">$29.990</p>
+                            <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                        </div>
+                    </article>
+                <article class="product-item">
+                    <img src="image/Jordan.png" alt="Producto 2">
+                    <div class="product-info">
+                        <h3>Jordan</h3>
+                        <p>Beanie Unisex <br> El tejido Knit se siente suave y cálido.</p>
+                        <p class="price">$36.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Jordan Air.png" alt="Producto 3">
+                    <div class="product-info">
+                        <h3>Jordan Air</h3>
+                        <p>Gorro Unisex Dri-Fit ADV. <br>Tela avanzada que absorbe el sudor para ayudarte a mantener la frescura.</p>
+                        <p class="price">$32.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Jordan Sport.png" alt="Producto 4">
+                    <div class="product-info">
+                        <h3>Jordan Sport</h3>
+                        <p>Gorro Tn Air Max desestructurado.</p>
+                        <p class="price">$32.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Hyverse.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Hyverse</h3>
+                        <p>Gorra estructurada. <br> Comodidad y una visera plana para verse bien.</p>
+                        <p class="price">$39.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/2024 All-Star Weekend.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>2024 All-Star Weekend</h3>
+                        <p>Gorra estructurada <br>Profundidad alta para darte un ajuste espacioso y moderno.</p>
+                        <p class="price">$112.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/M NSW TEE OS NCPS.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>M NSW TEE OS NCPS</h3>
+                        <p>Gorro reversible <br>Te permite cambiar tu estilo en cualquier momento.</p>
+                        <p class="price">$49.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Short Sleeve Hydroguard.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Short Sleeve Hydroguard</h3>
+                        <p> estructurada.</p>
+                        <p class="price">$29.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Rise 365 Run Division.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Rise 365 Run Division</h3>
+                        <p>Polera de runnning de manga corta Dri-FIT<br>Lleva el estilo informal a cualquier atuendo con nuestra gorra Nike Club.</p>
+                        <p class="price">$56.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Sportswear Club Fleece.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Sportswear Club Fleece</h3>
+                        <p>Polerón de cuello redondo<br>Comodidad suave del tejido Fleece para brindar un look mejorado para el día a día.</p>
+                        <p class="price">$46.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Rise 365 Run Energy.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Rise 365 Run Energy</h3>
+                        <p>Polera de Running<br>Esta playera ligera, transpirable y absorbente del sudor mantiene vivo el espíritu rebelde.</p>
+                        <p class="price">$26.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+                <article class="product-item">
+                    <img src="image/Nike Rise 365 Running Division1.png" alt="Producto 1">
+                    <div class="product-info">
+                        <h3>Nike Rise 365 Running Division</h3>
+                        <p>Polera Dri-Fit para hombre. <br>Con un corte de ajuste holgado, esta playera mantiene la frescura con la tela elástica y absorbente de sudor.</p>
+                        <p class="price">$49.990</p>
+                        <a href="#" class="btn-secondary">Añadir al Carrito</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text-align-center">
+              <h1>Anuncios</h1>
+            </div>
+          </div>
+          <div class="container">
+          <div class="item">
+            <img src="c:\Users\Admin\Desktop\pack-3-tora-selva-negra-fruna-3-300x300.png" alt="Imagen 3">
+            <div class="description">Torta Selva Negra <br>$400</div>
+          </div>
+          
+    </div>
+        
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="about-content">
+                <p>tienda onlain de naikk, noes copia 100% original no feik</p>
+                <p> NO VISITAR https://www.nike.cl/ ES PAGINA FEIK ROBA TUS DATOS Y TU DINERO  </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Respetar Copi.</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
